@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="lv" dir="ltr">
+  <head>
+    <meta name="author" content="Toms Fridrihsons">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>KFH</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <a href="#Sakums"><img class="logo"src="KFHlogo.svg" alt="KFH laimes mezglu logo"> </a>
+        <li><a href="#Galerija">Galerija</a></li>
+        <li><a href="#Kontakti">Kontakti</a></li>
+        <li><a target="_blank" href="https://www.etsy.com/shop/KnotsforHappinessLV">Veikals</a></li>
+      </ul>
+
+    <img  class="symbol"src="kfhsymbol.svg" alt="KFH laimes mezglu simbols">
+
+    </nav>
+    <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="109586127144871"
+  theme_color="#d696bb"
+  logged_in_greeting="Sveiki, kā varu palīdzēt?"
+  logged_out_greeting="Sveiki, kā varu palīdzēt?">
+      </div>
+  </body>
+</html>
