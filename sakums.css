@@ -1,0 +1,53 @@
+*{
+  padding:0;
+  margin: 0;
+}
+@font-face {
+font-family: "Vulture";
+src: url("Vulturesthesecond.otf");
+}
+@font-face {
+font-family: "Terminal";
+src: url("Terminal.fon");
+}
+body{
+  background: #fff9f9;
+}
+a{
+  text-decoration: none;
+  color: #807b7b;
+}
+
+nav{
+  height:10vh;
+  background: #f9f9f9;
+  padding: 5px 20px;
+  display: flex;
+  line-height: 10vh;
+  justify-content: space-around;
+}
+nav ul li{
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  float: left;
+  padding-right: 15px;
+}
+nav ul li a{
+font-family: 'Terminal';
+
+}
+.logo a{
+  font-family: 'Vulture';
+  font-size:3rem;
+  padding-left: 15px;
+  left: 15px;
+}
+#myCarousel .item{
+  height: 90vh;
+  margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
