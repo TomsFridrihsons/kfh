@@ -10,9 +10,6 @@ src: url("Vulturesthesecond.otf");
 font-family: "Terminal";
 src: url("Terminal.fon");
 }
-body{
-  background: #fff9f9;
-}
 a{
   text-decoration: none;
   color: #807b7b;
@@ -29,25 +26,131 @@ nav{
 nav ul li{
   text-decoration: none;
   list-style-type: none;
-  display: flex;
   flex-direction: row;
   float: left;
-  padding-right: 15px;
+  display: block;
+  padding-right: 20px;
 }
 nav ul li a{
 font-family: 'Terminal';
-
+letter-spacing: .8;
 }
-.logo a{
+.logo {
   font-family: 'Vulture';
-  font-size:3rem;
+  font-size:2.5rem;
   padding-left: 15px;
   left: 15px;
 }
-#myCarousel .item{
-  height: 90vh;
-  margin: 0 auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+body{
+  height: 100vh;
+
+  background: #fff9f9;
+}
+
+.slider{
+  width: 600px;
+  height: 425px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 425px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 600px;
+  height: 425px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 600px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1.5s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 600px;
+  justify-content: center;
+  margin-top: 385px;
+}
+
+.navigation-auto div{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1.5s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
 }
