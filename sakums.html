@@ -16,10 +16,10 @@
   <nav>
     <a class="logo" href="Sakums.html">Knots for Happiness</a>
     <ul>
-      <li><a href="#Sakums.html">Sākums</a></li>
+      <li><a href="Sakums.html">Sākums</a></li>
       <li><a href="galerija.html">Galerija</a></li>
       <li><a href="https://www.etsy.com/shop/KnotsforHappinessLV">Etsy Veikals</a></li>
-      <li><a href="#Kontakti.html">Kontakti</a></li>
+      <li><a href="Kontakti.html">Kontakti</a></li>
     </ul>
   </nav>
   </header>
@@ -36,7 +36,7 @@
           <!--radio buttons end-->
           <!--slide images start-->
           <div class="slide first">
-            <img src="siena.jpg" alt="">
+            <img src="kfh-foto/siena.jpg" alt="">
           </div>
           <div class="slide">
             <img src="kfh-foto/podi.jpg" alt="">
@@ -71,7 +71,32 @@
 <section id="g">
 <h2>Jaunumi</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v7.0'
+      });
+    };
 
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="109586127144871"
+theme_color="#d696bb"
+logged_in_greeting="Sveiki, kā varu palīdzēt?"
+logged_out_greeting="Sveiki, kā varu palīdzēt?">
+  </div>
 <footer>
   <div class="info">
         <ul>
@@ -84,8 +109,8 @@
       </div>
       <div class="social">
         <ul class="fa-ul">
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.instagram.com/knotsforhappiness/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/knotsforhappiness" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
         </ul>
       </div>
 </footer>

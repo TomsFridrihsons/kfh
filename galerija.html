@@ -18,9 +18,9 @@
     <a class="logo" href="Sakums.html">Knots for Happiness</a>
     <ul>
       <li><a href="Sakums.html">Sākums</a></li>
-      <li><a href="#g">Galerija</a></li>
+      <li><a href="Galerija.html">Galerija</a></li>
       <li><a href="https://www.etsy.com/shop/KnotsforHappinessLV" target="_blank">Etsy Veikals</a></li>
-      <li><a href="#Kontakti.html">Kontakti</a></li>
+      <li><a href="Kontakti.html">Kontakti</a></li>
     </ul>
   </nav>
   </header>
@@ -28,10 +28,10 @@
 <section id="photos">
   <img src="kfh-foto/mazasiena.jpg" alt="Knots for Happiness macrame sienas dekors">
   <img src="kfh-foto/piekarini.jpg" alt="Knots for Happiness macrame">
-  <img src="siena.jpg" alt="Knots for Happiness macrame">
+  <img src="kfh-foto/siena.jpg" alt="Knots for Happiness macrame">
   <img src="kfh-foto/podi.jpg" alt="Knots for Happiness macrame">
   <img src="kfh-foto/aizkaru-t.jpg" alt="Knots for Happiness macrame">
-  <!-- <img src="kfh-foto/auskari.jpg" alt=""> -->
+  <img src="kfh-foto/auskari.jpg" alt="">
   <img src="kfh-foto/galda-d.jpg" alt="Knots for Happiness macrame">
   <img src="kfh-foto/galds.jpg" alt="Knots for Happiness macrame">
   <img src="kfh-foto/kaktusini.jpg" alt="Knots for Happiness macrame">
@@ -53,6 +53,32 @@
   <img src="kfh-foto/supulkresls2.jpg" alt="Knots for Happiness macrame">
   <img src="kfh-foto/zsvetki.jpg" alt="Knots for Happiness macrame">
 </section>
+<!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v7.0'
+      });
+    };
+
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="109586127144871"
+theme_color="#d696bb"
+logged_in_greeting="Sveiki, kā varu palīdzēt?"
+logged_out_greeting="Sveiki, kā varu palīdzēt?">
+  </div>
 <footer>
   <div class="info">
         <ul>
@@ -65,8 +91,9 @@
       </div>
       <div class="social">
         <ul class="fa-ul">
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.instagram.com/knotsforhappiness/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/knotsforhappiness" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.pinterest.ca/knotsforhappiness/a" target="_blank"><i class=" fab fa-pinterest-p"></i></a></li>
         </ul>
       </div>
 </footer>
