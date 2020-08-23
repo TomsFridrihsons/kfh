@@ -1,30 +1,33 @@
-*{
-  padding:0;
+* {
+  padding: 0;
   margin: 0;
 }
+
 @font-face {
-font-family: "Vulture";
-src: url("Vulturesthesecond.otf");
-}
-@font-face {
-font-family: "Terminal";
-src: url("Terminal.fon");
+  font-family: "Vulture";
+  src: url("Vulturesthesecond.otf");
 }
 
-a{
+@font-face {
+  font-family: "Terminal";
+  src: url("Terminal.fon");
+}
+
+a {
   text-decoration: none;
   color: #807b7b;
 }
 
-nav{
-  height:10vh;
+nav {
+  height: 10vh;
   background: #f4f4f4;
   padding: 5px 20px;
   display: flex;
   line-height: 10vh;
   justify-content: space-around;
 }
-nav ul li{
+
+nav ul li {
   text-decoration: none;
   list-style-type: none;
   display: flex;
@@ -32,38 +35,39 @@ nav ul li{
   float: left;
   padding-right: 20px;
 }
-nav ul li a{
-font-family: 'Terminal';
-letter-spacing: .8;
+
+nav ul li a {
+  font-family: 'Terminal';
+  letter-spacing: .8;
 }
+
 .logo {
   font-family: 'Vulture';
-  font-size:2.5rem;
+  font-size: 2.5rem;
   padding-left: 15px;
   left: 15px;
 }
-body{
 
+body {
   margin: 0;
   padding: 0;
   background-image: linear-gradient(#f7f7f7, #fff9f9);
-
 }
-section{
-    margin: 5vh auto;
-    width: 90%;
 
+section {
+  margin: 5vh auto;
+  width: 90%;
 }
+
 #photos {
   /* Prevent vertical gaps */
   line-height: 0;
-
   -webkit-column-count: 5;
-  -webkit-column-gap:   9px;
-  -moz-column-count:    5;
-  -moz-column-gap:      9px;
-  column-count:         5;
-  column-gap:           9px;
+  -webkit-column-gap: 9px;
+  -moz-column-count: 5;
+  -moz-column-gap: 9px;
+  column-count: 5;
+  column-gap: 9px;
 }
 
 #photos img {
@@ -72,31 +76,35 @@ section{
   height: auto !important;
   margin: 4.5px;
 }
+
 @media (max-width: 1200px) {
   #photos {
-  -moz-column-count:    4;
-  -webkit-column-count: 4;
-  column-count:         4;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
   }
 }
+
 @media (max-width: 1000px) {
   #photos {
-  -moz-column-count:    3;
-  -webkit-column-count: 3;
-  column-count:         3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
   }
 }
+
 @media (max-width: 800px) {
   #photos {
-  -moz-column-count:    2;
-  -webkit-column-count: 2;
-  column-count:         2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
   }
 }
+
 @media (max-width: 400px) {
   #photos {
-  -moz-column-count:    1;
-  -webkit-column-count: 1;
-  column-count:         1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
   }
 }

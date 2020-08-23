@@ -1,0 +1,57 @@
+*{
+    list-style-type: none;
+}
+footer{
+  position: relative;
+  padding-top: 5vh;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  height:20vh;
+  background: #f4f4f4;
+  overflow: hidden;
+}
+.info{
+ margin-left: 25px;
+ color: #807b7b;
+}
+.fa-map-marker-alt, .fa-phone-alt{
+
+  margin-right: 10px;
+    color: #807b7b;
+}
+.info li{
+  font-size: 20px;
+
+}
+.info a{
+  color: #807b7b
+
+}
+.social{
+
+  display: flex;
+   margin: 10px auto;
+  justify-content: center;
+
+}
+.fa-ul{
+  display: flex;
+}
+
+.fa-instagram, .fa-facebook-f{
+  text-align: center;
+  color: #807b7b;
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width:768px) {
+  footer{
+    height: auto +30px;
+  }
+  .info{
+   margin-left: 50px;
+  }
+}
