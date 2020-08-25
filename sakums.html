@@ -3,133 +3,183 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="stylesheet" href="sakums.css">
   <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="sakumsM.css">
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
   <script src="https://kit.fontawesome.com/30459e1049.js" crossorigin="anonymous"></script>
-  <title>Knots for Happiness</title>
+  <title>KFH</title>
+  <link rel="icon" type="image/svg" href="kfhsymbol.svg">
 </head>
 
 <body>
-    <header>
-  <!-- Navigation -->
-  <nav>
-    <a class="logo" href="Sakums.html">Knots for Happiness</a>
-    <ul>
-      <li><a href="Sakums.html">Sākums</a></li>
-      <li><a href="galerija.html">Galerija</a></li>
-      <li><a href="https://www.etsy.com/shop/KnotsforHappinessLV">Etsy Veikals</a></li>
-      <li><a href="Kontakti.html">Kontakti</a></li>
-    </ul>
-  </nav>
+  <header>
+    <!-- Navigation -->
+    <nav>
+      <a class="logo" href="Sakums.html">Knots for Happiness</a>
+      <ul>
+        <li><a href="Sakums.html">Sākums</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+        <li><a href="https://www.etsy.com/shop/KnotsforHappinessLV">Etsy Veikals</a></li>
+        <li><a href="Kontakti.html">Kontakti</a></li>
+      </ul>
+    </nav>
   </header>
 
-<div class="sliderall">
-      <!--image slider start-->
-      <div class="slider">
-        <div class="slides">
-          <!--radio buttons start-->
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
-          <!--radio buttons end-->
-          <!--slide images start-->
-          <div class="slide first">
-            <img src="kfh-foto/siena.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="kfh-foto/podi.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="kfh-foto/mazasiena.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="kfh-foto/piekarini.jpg" alt="">
-          </div>
-          <!--slide images end-->
-          <!--automatic navigation start-->
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-          </div>
-          <!--automatic navigation end-->
+  <div class="sliderall">
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="kfh-foto/siena.jpg" alt="">
         </div>
-        <!--manual navigation start-->
-        <div class="navigation-manual">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
+        <div class="slide">
+          <img src="kfh-foto/podi.jpg" alt="">
         </div>
-        <!--manual navigation end-->
+        <div class="slide">
+          <img src="kfh-foto/mazasiena.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="kfh-foto/piekarini.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
       </div>
-      <!--image slider end-->
-</div>
-<section id="g">
-<h2>Jaunumi</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<!-- Load Facebook SDK for JavaScript -->
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+  </div>
+
+
+  <div class="headline">
+    <h1>Jaunumi.</h1>
+  </div>
+
+    <div id="articleList">
+      <div id="article_1" class="ieraksts">
+        <div id="articleImage_1" class="ierakstaImg">
+          <img src="kfh-foto/siena.jpg" alt="Picture #1">
+        </div>
+        <div id="articleContent_1" class="ierakstaKontens">
+          <div id="articleTags_1" class="ierakstaTags"><span>Siena</span></div>
+          <div id="articleTitle_1" class="IerakstaNosaukums">
+            <h2>Lorem ipsum dolor.</h2>
+          </div>
+          <div id="articleDate_1" class="ierakstaDatums"> May 26. 2020.</div>
+          <div id="articleBody_1" class="IerakstaBody">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni soluta quidem, aliquid nobis, voluptates reprehenderit. <a>Read more...</a></p>
+          </div>
+        </div>
+      </div>
+      <div id="article_2" class="ieraksts">
+        <div id="articleImage_2" class="ierakstaImg">
+          <img src="kfh-foto/podi.jpg" alt="Picture #2">
+        </div>
+        <div id="articleContent_2" class="ierakstaKontens">
+          <div id="articleTags_2" class="ierakstaTags"><span>Podi</span></div>
+          <div id="articleTitle_2" class="IerakstaNosaukums">
+            <h2>Lorem ipsum.</h2>
+          </div>
+          <div id="articleDate_2" class="ierakstaDatums">April 12. 2020.</div>
+          <div id="articleBody_2" class="IerakstaBody">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni soluta quidem, aliquid nobis, voluptates reprehenderit. <a>Read more...</a></div>
+          </div>
+        </div>
+        <div id="article_3" class="ieraksts">
+          <div id="articleImage_3" class="ierakstaImg">
+            <img src="kfh-foto/podi.jpg" alt="Picture #2">
+          </div>
+          <div id="articleContent_3" class="ierakstaKontens">
+            <div id="articleTags_3" class="ierakstaTags"><span>Podi</span></div>
+            <div id="articleTitle_3" class="IerakstaNosaukums">
+              <h2>Lorem ipsum.</h2>
+            </div>
+            <div id="articleDate_3" class="ierakstaDatums">April 12. 2020.</div>
+            <div id="articleBody_3" class="IerakstaBody">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni soluta quidem, aliquid nobis, voluptates reprehenderit. <a>Read more...</a></div>
+            </div>
+          </div>
+      </div>
+
+
+
+  </section>
+  <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
   <script>
     window.fbAsyncInit = function() {
       FB.init({
-        xfbml            : true,
-        version          : 'v7.0'
+        xfbml: true,
+        version: 'v7.0'
       });
     };
 
     (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <!-- Your Chat Plugin code -->
-  <div class="fb-customerchat"
-    attribution=setup_tool
-    page_id="109586127144871"
-theme_color="#d696bb"
-logged_in_greeting="Sveiki, kā varu palīdzēt?"
-logged_out_greeting="Sveiki, kā varu palīdzēt?">
+  <div class="fb-customerchat" attribution=setup_tool page_id="109586127144871" theme_color="#d696bb" logged_in_greeting="Sveiki, kā varu palīdzēt?" logged_out_greeting="Sveiki, kā varu palīdzēt?">
   </div>
-<footer>
-  <div class="info">
-        <ul>
-          <li><i class="fas fa-map-marker-alt"></i> Talsu Radošā sēta, "Patrepe"</li>
-          <li>
-            <span class="fas fa-phone-alt"></span>
-            <span><a id="phone" href="tel:26189592">+371 26189592</a></span>
-          </li>
-        </ul>
-      </div>
-      <div class="social">
-        <ul class="fa-ul">
-          <li><a href="https://www.instagram.com/knotsforhappiness/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="https://www.facebook.com/knotsforhappiness" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="https://www.pinterest.ca/knotsforhappiness" target="_blank"><i class=" fab fa-pinterest-p"></i></a></li>
-        </ul>
-      </div>
-</footer>
-
-</section>
+  <footer>
+    <div class="info">
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> Talsu Radošā sēta, "Patrepe"</li>
+        <li>
+          <span class="fas fa-phone-alt"></span>
+          <span><a id="phone" href="tel:26189592">+371 26189592</a></span>
+        </li>
+      </ul>
+    </div>
+    <div class="social">
+      <ul class="fa-ul">
+        <li><a href="https://www.instagram.com/knotsforhappiness/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/knotsforhappiness" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://www.pinterest.ca/knotsforhappiness" target="_blank"><i class=" fab fa-pinterest-p"></i></a></li>
+      </ul>
+    </div>
+  </footer>
 
 
-
-      <script type="text/javascript">
-      var counter = 1;
-      setInterval(function(){
-        document.getElementById('radio' + counter).checked = true;
-        counter++;
-        if(counter > 4){
-          counter = 1;
-        }
-      }, 5000);
-      </script>
+  <script type="text/javascript">
+    var counter = 1;
+    setInterval(function() {
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if (counter > 4) {
+        counter = 1;
+      }
+    }, 5000);
+  </script>
 </body>
 
 </html>

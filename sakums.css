@@ -160,13 +160,35 @@ body{
 #radio4:checked ~ .navigation-auto .auto-btn4{
   background: #40D3DC;
 }
-#g{
-  margin-top: 30vh;
-  transition: .5s;
+
+h1{
+  font-family: Terminal;
+  font-size: 75px;
+  margin-left: 15vh;
+  color: #7c8080;
+  letter-spacing:-5px;
 }
-p{
-  width: 400px;
-  line-height: 1.2;
-  text-align: center;
-  margin: auto;
+
+.ieraksts{
+  margin:auto 0 15px 15vh;
+  width: 70%;
+  display: flex;
+}
+.ierakstaKontens{
+  margin-left: 15px;
+}
+.ierakstaImg img{
+  height: 200px;
+}
+.ierakstaTags span{
+  background-color:lightblue;
+  padding: 5px;
+  margin: 15px;
+  font-weight: 450;
+}
+.IerakstaNosaukums,.ierakstaDatums,.ierakstaTags{
+  margin-bottom: 5px;
+}
+.IerakstaBody{
+  text-indent: 35px;
 }
